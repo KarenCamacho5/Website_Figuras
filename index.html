@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="fondo">
+    <section id="ejemplo">
+        <div id="panel-lateral">
+            <h2>Menú Principal</h2>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Perfil</a>
+                <a href="#">Estudios</a>
+                <a href="#">Hobbies</a>
+                <a href="#">Habilidades</a>
+            </ul>
+        </div>
+        <div id="panel-superior">
+            <h2>VIDEO</h2>
+            <hr>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R9BB6LvqmE8?si=gJB-XdwBMYwDLFt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="fila">
+            <div class="col-izq">
+                <h1>Interacciones</h1>
+                <button onclick="circulo()">Circulo</button>
+                <button onclick="rectangulo()">Rectangulo</button>
+                <button onclick="degradado()">Degradado</button>
+                <button onclick="gif()">Gif</button>
+                <button onclick="luna()">Luna</button>
+                <button onclick="estrella()">Estrella</button>
+                <button onclick="triangulo()">Triangulo</button>
+                <button onclick="moveTop()">Top</button>
+                <button onclick="moveBottom()">Bottom</button>
+                <button onclick="moveLeft()">Left</button>
+                <button onclick ="moveRight()">Right</button>
+                <button onclick ="Diagonal()">Diagonal</button>
+                <button onclick="panelLateral()">Panel Lateral</button>
+                <button onclick="panelSuperior()">Panel Superior</button>
+                <button onclick="fondo()">Background General</button>
+                <button onclick="bgfondo()">BG Ingreado por el usuario</button>
+            </div>
+            <div class="col-der">
+                <h1 id="titulo">Figuras</h1>
+                <div id="figura" class=""></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

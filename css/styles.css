@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); 
+
+*{
+    font-family: "Abril Fatface", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+#ejemplo{
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+#ejemplo .fila{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding-top: 120px;
+}
+
+.col-izq, .col-der{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ffff;
+    background: #00000055;
+    padding: 40px;
+    min-height: 600px;
+}
+
+h1{
+    font-size: 40px;
+    color:#bf33d0;
+    padding: 20px;
+    border-bottom: 1px solid #ffff ;
+}
+
+#ejemplo button{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: .5s;
+    cursor: pointer;
+}
+#ejemplo button:hover{
+    transform: scale(0.9);
+    background: #ffffff;
+    color: #000;
+}
+
+#figura{
+    width: 210px;
+    height: 210px;
+    background: #ffffff;
+    margin: 100px auto;
+    transition: 1s;
+}
+#figura.circulo{
+    transform: scale(1.8) rotate(360deg);
+    border-radius: 50%;
+    background: #8b17ff;
+}
+#figura.rectangulo{
+    height: 280px;
+    background: #f26bbe;
+}
+
+#figura.right{
+    transform: translateX(200px);
+}
+
+#figura.degradado{
+    background: linear-gradient(to right, #007bff, #2196f3, #4fc3f7, #81d4fa, #b3e5fc);
+}
+
+#figura.gif{
+    background: url(../img/gif.gif);
+    background-size: cover;
+    background-position: center;
+}
+#figura.luna{
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 75px 35px  #707070;
+}
+
+
+
+#figura.estrella{
+    position: relative;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid  #007bff;
+    border-left: 50px solid transparent;
+}
+#figura.estrella::after{
+    position: absolute;
+    border-top: 100px solid #007bff;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: '';
+    top: 30px;
+    left: -50px;  
+}
+
+#figura.triangulo{
+    background-color: transparent;
+    border: 150px solid transparent;
+    border-top: 0;
+    border-bottom: 300px solid rgb(49, 2, 61);
+} 
+
+#figura.top{
+    transform: translateY(-200px);
+}
+
+#figura.Bottom{
+    transform: translateY(150px);
+}
+
+#figura.Left{
+    transform: translateX(-200px);
+}
+
+#figura.Diagonal{
+    transform: translate(100px, 100px);
+}
+
+body.fondo{
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-lateral{
+    width: 400px;
+   height: 100%;
+   position: absolute;
+   left: -450px;
+   top: 0;
+   z-index:9 ; 
+   background: #ffffff;
+   transition: 1s;
+}
+#panel-lateral.active{
+    left: 0;
+}
+#panel-lateral h2{
+    color: #000;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+#panel-lateral ul{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#panel-lateral ul a{
+    display: block;
+    padding: 20px;
+    background: #000;
+    color: #ffff;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#panel-lateral ul a:hover{
+    transform: scale(0.9);
+    background: #ffffff;
+    color: #000;
+}
+
+#panel-superior{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: -450px;
+    z-index: 9;
+    background: #ffffff;
+    transition: 1s;
+    text-align: center;
+}
+#panel-superior.active{
+    top: 0;
+}
+
